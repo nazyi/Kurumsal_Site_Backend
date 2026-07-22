@@ -6,6 +6,8 @@ Spring Boot kullanılarak geliştirilen bu proje, kurumsal bir web sitesinin bac
 
 Bu proje, kurumsal web sitelerinde yer alan dinamik içeriklerin yönetilebilmesi amacıyla geliştirilmiştir. Yönetim paneli üzerinden içeriklerin eklenmesi, güncellenmesi ve silinmesi sağlanırken, kullanıcı tarafında güncel içeriklerin görüntülenmesi hedeflenmiştir.
 
+<img width="1920" height="1966" alt="anasayfa - Kopya" src="https://github.com/user-attachments/assets/98825e50-2041-463b-8349-da2fc2d7842b" />
+
 ## Özellikler
 
 - Ana sayfa içerik yönetimi
