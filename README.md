@@ -2,10 +2,11 @@
  
 **Kurumsal Site Backend**, kurumsal bir web sitesinin dinamik içeriklerini (haberler, kurslar, hakkımızda, iletişim formu vb.) yönetmek için geliştirilmiş bir REST API'dir. **Controller – Service – Repository** katmanlı mimarisi ile geliştirilmiş olup Entity ↔ DTO dönüşümleri ayrı bir **Mapper** katmanı üzerinden yönetilir.
  
-> ⚠️ Bu depo yalnızca **backend** kaynak kodlarını içerir; frontend uygulaması bu depoda yer almaktadır.
+
 
 
 <img width="1920" height="1966" alt="anasayfa - Kopya" src="https://github.com/user-attachments/assets/98825e50-2041-463b-8349-da2fc2d7842b" />
+
 
 
 ##  Özellikler
@@ -17,6 +18,7 @@
 - 🔗 Sosyal medya / dış bağlantı (Links) yönetimi
 - 🧱 Temiz, katmanlı ve genişletilebilir mimari
 - 🔄 Entity–DTO dönüşümleri için özel Mapper sınıfları
+
 
 ## 🛠️ Kullanılan Teknolojiler
  
@@ -30,6 +32,7 @@
 | Mimari | Katmanlı Mimari (Controller – Service – Repository – Entity – DTO – Mapper) |
  
 
+
 ## Katmanların Görevleri
 
 - **Controller:** İstemciden gelen HTTP isteklerini karşılar.
@@ -38,6 +41,7 @@
 - **Entity:** Veritabanı tablolarını temsil eder.
 - **DTO:** Katmanlar arasında veri taşınmasını sağlar.
 - **Mapper:** Entity ve DTO nesneleri arasında dönüşüm yapar.
+
 
 ## 🧩 Katmanların Görevleri
  
@@ -52,6 +56,4 @@
 
 
 
-## Not
-
-Bu repository yalnızca projenin **backend** kısmını içermektedir. Frontend uygulaması bu repository içerisinde yer almamaktadır.
+> ⚠️ Bu depo yalnızca **backend** kaynak kodlarını içerir; frontend uygulaması bu depoda yer almaktadır.
