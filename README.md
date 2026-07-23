@@ -1,30 +1,34 @@
-# Kurumsal Web Sitesi Backend
+## Proje Hakkında
+ 
+**Kurumsal Site Backend**, kurumsal bir web sitesinin dinamik içeriklerini (haberler, kurslar, hakkımızda, iletişim formu vb.) yönetmek için geliştirilmiş bir REST API'dir. **Controller – Service – Repository** katmanlı mimarisi ile geliştirilmiş olup Entity ↔ DTO dönüşümleri ayrı bir **Mapper** katmanı üzerinden yönetilir.
+ 
+> ⚠️ Bu depo yalnızca **backend** kaynak kodlarını içerir; frontend uygulaması bu depoda yer almaktadır.
 
-Spring Boot kullanılarak geliştirilen bu proje, kurumsal bir web sitesinin backend altyapısını oluşturmaktadır. Katmanlı mimari (Controller - Service - Repository) kullanılarak geliştirilen sistem, içerik yönetimi, haber yönetimi ve iletişim formu işlemlerini güvenli ve düzenli bir şekilde gerçekleştirmektedir.
-
-## Projenin Amacı
-
-Bu proje, kurumsal web sitelerinde yer alan dinamik içeriklerin yönetilebilmesi amacıyla geliştirilmiştir. Yönetim paneli üzerinden içeriklerin eklenmesi, güncellenmesi ve silinmesi sağlanırken, kullanıcı tarafında güncel içeriklerin görüntülenmesi hedeflenmiştir.
 
 <img width="1920" height="1966" alt="anasayfa - Kopya" src="https://github.com/user-attachments/assets/98825e50-2041-463b-8349-da2fc2d7842b" />
 
-## Özellikler
 
-- Ana sayfa içerik yönetimi
-- Hakkımızda sayfası yönetimi
-- Haber ekleme, güncelleme ve listeleme
-- İletişim formu yönetimi
-- Veritabanı işlemleri
-- REST API desteği
-- Katmanlı mimari yapısı
+##  Özellikler
+ 
+- 📰 Haber ekleme, güncelleme, listeleme ve silme
+- 📚 Kurs ve kurs detay yönetimi
+- 👥 Hakkımızda içerik yönetimi
+- ✉️ İletişim formu kayıtlarının yönetimi
+- 🔗 Sosyal medya / dış bağlantı (Links) yönetimi
+- 🧱 Temiz, katmanlı ve genişletilebilir mimari
+- 🔄 Entity–DTO dönüşümleri için özel Mapper sınıfları
 
-## Kullanılan Teknolojiler
-
-- Java
-- Spring Boot
-- Maven
-- REST API
-- Katmanlı Mimari (Controller - Service - Repository)
+## 🛠️ Kullanılan Teknolojiler
+ 
+| Katman | Teknoloji |
+|---|---|
+| Dil | Java |
+| Framework | Spring Boot (Spring Web, Spring Data JPA) |
+| Veritabanı Erişimi | Jakarta Persistence (JPA) |
+| Kod Sadeleştirme | Lombok |
+| Build Aracı | Maven |
+| Mimari | Katmanlı Mimari (Controller – Service – Repository – Entity – DTO – Mapper) |
+ 
 
 ## Katmanların Görevleri
 
@@ -35,17 +39,18 @@ Bu proje, kurumsal web sitelerinde yer alan dinamik içeriklerin yönetilebilmes
 - **DTO:** Katmanlar arasında veri taşınmasını sağlar.
 - **Mapper:** Entity ve DTO nesneleri arasında dönüşüm yapar.
 
-## Kurulum
+## 🧩 Katmanların Görevleri
+ 
+| Katman | Görev |
+|---|---|
+| **Controller** | İstemciden gelen HTTP isteklerini karşılar |
+| **Service** | İş kurallarını ve uygulama mantığını içerir |
+| **Repository** | Spring Data JPA ile veritabanı işlemlerini gerçekleştirir |
+| **Entity** | Veritabanı tablolarını temsil eder |
+| **DTO** | Katmanlar arasında veri taşınmasını sağlar |
+| **Mapper** | Entity ve DTO nesneleri arasında dönüşüm yapar |
 
-```bash
-git clone https://github.com/kullaniciadi/repository-adi.git
 
-cd repository-adi
-
-mvn clean install
-
-mvn spring-boot:run
-```
 
 ## Not
 
