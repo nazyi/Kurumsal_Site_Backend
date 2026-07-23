@@ -56,4 +56,4 @@
 
 
 
-> ⚠️ Bu depo yalnızca **backend** kaynak kodlarını içerir; frontend uygulaması bu depoda yer almaktadır.
+> ⚠️ Bu depo yalnızca **backend** kaynak kodlarını içerir; frontend uygulaması bu depoda yer almamaktadır.
